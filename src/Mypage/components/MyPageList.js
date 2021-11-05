@@ -1,8 +1,6 @@
-import {Redirect, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
-function MyPage(){
-
-
+function MyPageList({match}){
     return(
         <>
             <div name="profile">
@@ -23,6 +21,7 @@ function MyPage(){
                     <li>고객님의 개인정보를 수정하실 수 있습니다</li>
                 </ul>
             </div>
+
             <div name="remove">
                 <ul>
                     <li><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" style={{width:50, height:50}}></img></li>
@@ -44,4 +43,4 @@ function MyPage(){
     );
 }
 
-export default MyPage;
+export default MyPageList;
