@@ -17,7 +17,7 @@
   top: 120px;
 }
 
-.input_id,
+.input_email,
 .input_password {
   width: 434px;
   height: 50px;
@@ -28,7 +28,7 @@
   margin-bottom: 30px;
 }
 
-.input_id:focus,
+.input_email:focus,
 .input_password:focus {
   border: 2px solid blue;
   padding: 5px 11px;

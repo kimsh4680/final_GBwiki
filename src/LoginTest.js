@@ -30,8 +30,10 @@ export default function LoginTest() {
     const name = e.target.name;
     if (name === "email") {
       setUser({ ...user, userEmail: e.target.value });
+      console.log(user.userEmail);
     } else if (name === "password") {
       setUser({ ...user, userPassword: e.target.value });
+      console.log(user.userPassword);
     }
   }
 
@@ -75,9 +77,9 @@ export default function LoginTest() {
             <br />
             <p>Email address</p>
             <input
-              className={styles.input_id}
+              className={styles.input_email}
               type="text"
-              name="id"
+              name="email"
               placeholder="이메일 주소"
               onChange={onChange}
             />
@@ -97,7 +99,7 @@ export default function LoginTest() {
               className={styles.login_btn}
               type="button"
               name="submit"
-              onChange={onChange}
+              onClick={onSubmit}
             >
               로그인
             </button>

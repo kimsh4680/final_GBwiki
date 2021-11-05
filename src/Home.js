@@ -78,8 +78,17 @@ export default function Home(){
 
     return(
         <>
-        <Link to="/join">회원가입</Link><br/>
-        {loginCheck ? <a href="#" onClick={logout}>로그아웃</a> : <Link to="/login">로그인</Link>}
+        {loginCheck ?
+            <>
+                <Link to="/myPage">내 정보</Link><br/>
+                <a href="#" onClick={logout}>로그아웃</a> 
+            </>
+            :
+            <>
+                <Link to="/join">회원가입</Link><br/> 
+                <Link to="/login">로그인</Link>
+            </>
+        }
         </>
     );
 }
